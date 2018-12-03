@@ -79,7 +79,7 @@ RUN cd /root/python-mapnik && \
 # Install python-mapnik
 # Note: This should not be nessisary,  except setup.py
 #       won't run AT ALL if python-mapnik isn't installed
-RUN pip install /root/python-mapnik/dist/*.whl
+RUN python3 -m pip install /root/python-mapnik/dist/*.whl
 
 # Install nvm,  and nodejs v6
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash \
