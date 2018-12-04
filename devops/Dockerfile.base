@@ -87,7 +87,4 @@ RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh
 
 WORKDIR /root
 
-RUN .  /root/.bashrc && python3 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U -r prerequirements.txt && \
-    python3 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U -r requirements.txt 
-
 CMD ["/bin/bash"]
